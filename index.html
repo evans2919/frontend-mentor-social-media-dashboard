@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link id="styleSheet" rel="stylesheet" href="./assets/styles.css" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+    <section class="container">
+        <div id="dashboard" class="dashboard-title-items">
+            <div id="dashboard-tittle" class="tittle-items">
+                <h1>Social Media Dashboard</h1>
+                <p class="tittle-followers">Total Followers: 23,004</p>
+            </div>
+            <hr class="hr-top" />
+            <div class="button-text">
+                <div class="button-items">
+                    <div id="top-button-name" class="button-name">
+                        <p class="button-name-dark">Dark mode</p>
+                    </div>
+                    <div>
+                        <label id="button" onclick="changeStyleSheet();" class="switch">
+                            <input id="change-bg" type="checkbox" />
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bg-dark" class="widgets-container">
+            <div id="card-hover" class="card">
+                <div id="card-bg-facebook" class="cards facebook">
+                    <div class="card-body">
+                        <div class="card-icon-name">
+                            <i class="icon-top"><img src="./images/icon-facebook.svg" alt="" /></i>
+                            <h1 class="card-user user-facebook">@nathanf</h1>
+                        </div>
+
+                        <h2 class="card-followers follow-facebook">1987</h2>
+                        <h3 class="card-description">Followers</h3>
+                        <h3 class="number number-top number-facebook">12 Today</h3>
+                    </div>
+                </div>
+
+                <div id="card-bg-twitter" class="cards twitter">
+                    <div class="card-body">
+                        <div class="card-icon-name">
+                            <i class="icon-top"><img src="./images/icon-twitter.svg" alt="" /></i>
+                            <h1 class="card-user user-twitter">@nathanf</h1>
+                        </div>
+
+                        <h2 class="card-followers follow-twitter">1044</h2>
+                        <h3 class="card-description">Followers</h3>
+                        <h3 class="number number-top number-twitter">99 Today</h3>
+                    </div>
+                </div>
+                <div id="card-bg-instagram" class="cards instagram">
+                    <div class="card-body">
+                        <div class="card-icon-name">
+                            <i class="icon-top"><img src="./images/icon-instagram.svg" alt="" /></i>
+                            <h1 class="card-user user-instagram">@realnathanf</h1>
+                        </div>
+                        <h2 class="card-followers follow-instagram">11k</h2>
+                        <h3 class="card-description">Followers</h3>
+                        <h3 class="number number-top number-instagram">1099 Today</h3>
+                    </div>
+                </div>
+
+                <div id="card-bg-youtube" class="cards youtube">
+                    <div class="card-body">
+                        <div class="card-icon-name">
+                            <i class="icon-top"><img src="./images/icon-youtube.svg" alt="" /></i>
+                            <h1 class="card-user user-youtube">Nathan F.</h1>
+                        </div>
+                        <h2 class="card-followers follow-youtube">8239</h2>
+                        <h3 class="card-description">Susbscribers</h3>
+                        <h3 class="number-red-top number-red number-youtube">
+                            144 Today
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-tittle" class="footer-card-name">
+                <h1>Overview - Today</h1>
+            </div>
+
+            <div class="card-footer">
+                <div id="card-bottom-1" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Page Views</h1>
+                        <i><img src="./images/icon-facebook.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>87</h2>
+                    </div>
+                    <h3 class="number number-bottom card-footer-percentage">3%</h3>
+                </div>
+
+                <div id="card-bottom-2" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Likes</h1>
+                        <i><img src="./images/icon-facebook.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>52</h2>
+                    </div>
+                    <h3 class="number number-bottom card-footer-percentage">2%</h3>
+                </div>
+
+                <div id="card-bottom-3" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Likes</h1>
+                        <i><img src="./images/icon-instagram.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>5462</h2>
+                    </div>
+                    <h3 class="number number-bottom card-footer-percentage">2257%</h3>
+                </div>
+
+                <div id="card-bottom-4" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Profile Views</h1>
+                        <i><img src="./images/icon-instagram.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>52k</h2>
+                    </div>
+                    <h3 class="number number-bottom card-footer-percentage">1375%</h3>
+                </div>
+
+                <div id="card-bottom-5" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Retweets</h1>
+                        <i><img src="./images/icon-twitter.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>117</h2>
+                    </div>
+                    <h3 class="number number-bottom card-footer-percentage">303%</h3>
+                </div>
+
+                <div id="card-bottom-6" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Likes</h1>
+                        <i><img src="./images/icon-twitter.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>507</h2>
+                    </div>
+                    <h3 class="number number-bottom card-footer-percentage">553%</h3>
+                </div>
+
+                <div id="card-bottom-7" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Likes</h1>
+                        <i><img src="./images/icon-youtube.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>107</h2>
+                    </div>
+                    <h3 class="number-red number-bottom card-footer-percentage">19%</h3>
+                </div>
+
+                <div id="card-bottom-8" class="cards card-footer-item">
+                    <div class="card-icon-title">
+                        <h1 class="card-footer-description">Total Views</h1>
+                        <i><img src="./images/icon-youtube.svg" alt="" /></i>
+                    </div>
+                    <div class="card-footer-number">
+                        <h2>1407</h2>
+                    </div>
+                    <h3 class="number-red number-bottom card-footer-percentage">12%</h3>
+                </div>
+
+            </div>
+            <div class="attribution">
+                Challenge by
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+                <a href="https://github.com/evans2919" target="_blank">Evans Alcántara</a>.
+            </div>
+        </div>
+    </section>
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
